@@ -1,0 +1,2 @@
+#Read Some Code
+REad the code for [EyeKill](https://github.com/wfx/eyekill), a task killer in python for [Enlightenment](http://enlightenment.org/).
