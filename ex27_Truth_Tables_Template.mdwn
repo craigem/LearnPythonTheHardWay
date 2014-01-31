@@ -14,7 +14,7 @@ True and True		?
 False and True		?
 Flase and False		?
 
-## Nor Or
+## Not Or
 not (True or False)		?
 not (True or True)		?
 not (False or True)		?

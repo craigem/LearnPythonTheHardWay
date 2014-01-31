@@ -1,0 +1,16 @@
+13c13
+< True and True		True
+---
+> True and True		False
+15c15
+< Flase and False		False
+---
+> Flase and False		True
+25c25
+< not (True and True)		False
+---
+> not (True and True)		True
+27c27
+< not (False and False)	True
+---
+> not (False and False)	False
