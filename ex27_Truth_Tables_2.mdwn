@@ -1,0 +1,43 @@
+## Not
+not False	True
+not True	False
+
+## Or
+True or False	True
+True or True	True
+False or True	True
+False or False	False
+
+## And
+True and False		False
+True and True		True
+False and True		False
+Flase and False		False
+
+## Not Or
+not (True or False)		False
+not (True or True)		False
+not (False or True)		False
+not (False or False)	True
+
+## Not And
+not (True and False)	True
+not (True and True)		False
+not (False and True)	True
+not (False and False)	True
+
+## !=
+1 != 0	True
+1 != 1	False
+0 != 1	True
+0 != 0	False
+
+## ==
+1 == 0	False
+1 == 1	True
+0 == 1	False
+0 == 0	True
+
+## Results: 
+Correct: 26
+Incorrect: 0
