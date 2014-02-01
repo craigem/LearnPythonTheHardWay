@@ -37,3 +37,11 @@ not (False and False)	False
 1 == 1	True
 0 == 1	False
 0 == 0	True
+
+## Results:
+Correct: 22
+Incorrect: 4
+* **Line 13:** Correct answer was True
+* **Line 15:** Correct answer was False
+* **Line 25:** Correct answer was False
+* **Line 27:** Correct answer was True
