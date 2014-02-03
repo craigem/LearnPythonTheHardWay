@@ -5,8 +5,6 @@ numbers = []
 
 def append_numbers(n):
 	"""This function will increment the numbers for us."""
-#	global i
-#	while i < n:
 	for i in range(0, 6):
 		print "At the top i is %d" % i
 		numbers.append(i)
