@@ -1,9 +1,10 @@
 animals = ['bear', 'python', 'peacock', 'kangaroo', 'whale', 'platypus']
 
-print "The list of animals is: "
+print "The list of animals is: ", 
 for i in animals:
-	print i	
+	print i ,
 
+print "\n" 
 # The animal at 1.
 print "The animal at 1 is: " + animals[1]
 # The third (3rd) animal.
