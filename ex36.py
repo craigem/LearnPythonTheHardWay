@@ -39,6 +39,7 @@ def hamster_room():
 	elif next == "toothpick":
 	# Choosing the  toothpick will result in hmaster slaughter
 		print "You pick up the toothpick with a forward summersault before stabbing the evil hamster through the heart."
+		exit(0)
 	else:
 	# Choosing an invalid option results in death
 		dead("The floor opens up underneath you as Cthulu rises and swallows you whole.")
@@ -57,11 +58,16 @@ def gerbil_room():
 	next = raw_input("Which do you choose?: ")
 
 	if next == "dental floss":
-	# Choosing the salad sandwich will result in the hamster devouring you
-		print "Thl let's out b , leaps toward you, tears your head off and commences devouring you from the neck down."
+	# Choosing the dental floss will result in the gerbil assasination.
+		print "You cartwheel across to the gerbil, collecting the dental floss along the way before strangling the evil little bugger from behind."
 		exit(0)
-
-# dead option
+	elif next == "celery":
+	# Choosing celery will result in the gerbil get a free meal of human flesh.
+		print "The gerbil lets out a blood curdling cry before leaping across the room and locking it's powerful jaw around your left big toe as it commences to devour you from the bottom up."
+		exit(0)
+	else:
+	# Choosing an invalid option results in death
+		dead("The floor opens up underneath you as Cthulu rises and swallows you whole.")
 
 def dead(why):
 	print why, "Good job!"
