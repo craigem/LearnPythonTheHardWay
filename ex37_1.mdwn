@@ -9,32 +9,32 @@ elif		nests an if statement inside and if statement
 global		a declaration that holds for the entire current block of code
 or			if first value is not true, it will evaluate the second value
 with		used to wrap the execution of a block with methods defined by a context manager
-assert		
-else
-if
-pass
-yield
-break
-except
-import
-print
-class
-exec
-in
-raise
-continue
-finally
-is
-return
-def
-for
-lambda
-try
+assert		insert debugging assertions
+else		if all expressions are false, run this.
+if			setup conditional execution
+pass		is a null operation - useful as a placeholder.
+yield		used when defining a generator function
+break		terminates nearest enclosing for or while loop
+except		specifies exception handlers in a try statement
+import		starts an import statement for a python module
+print		prints a string to stdout
+class		commences defining a class object
+exec		
+in			Comparison operator testing for collection membership
+raise		if no expressions are present, re-raises the last exception in te current scope.
+continue	continues with the next cycle of the nearest enclosing loop of a for / while loop.
+finally		specifies a cleanup handler in a try clause
+is			comparison operator
+return 		leaves the current function call with the expression list (or "none")
+def			denotes the start of a function definition
+for			denotes the start of a for loop
+lambda		creates an anonymous expression
+try			specifies exception handlers and/or cleanup code.
 
 ## Data Types
 For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
 
-True
+True		
 False
 None
 strings
