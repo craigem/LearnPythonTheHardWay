@@ -1,23 +1,17 @@
 ## Keywords
 and			boolean operator evaluating two values
 del			delete specified target(s)
-from		specifies what module to import a function
 not			boolean operator that yields true if the argument is fales and vice versa
 while		repeats execution as long as anexpresssion is true
 as			used with "with" to specify a target
-elif		nests an if statement inside and if statement
 global		a declaration that holds for the entire current block of code
 or			if first value is not true, it will evaluate the second value
 with		used to wrap the execution of a block with methods defined by a context manager
 assert		insert debugging assertions
-else		if all expressions are false, run this.
-if			setup conditional execution
 pass		is a null operation - useful as a placeholder.
 yield		used when defining a generator function
 break		terminates nearest enclosing for or while loop
 except		specifies exception handlers in a try statement
-import		starts an import statement for a python module
-print		prints a string to stdout
 class		commences defining a class object
 exec		
 in			Comparison operator testing for collection membership
@@ -26,7 +20,6 @@ continue	continues with the next cycle of the nearest enclosing loop of a for / 
 finally		specifies a cleanup handler in a try clause
 is			comparison operator
 return 		leaves the current function call with the expression list (or "none")
-def			denotes the start of a function definition
 for			denotes the start of a for loop
 lambda		creates an anonymous expression
 try			specifies exception handlers and/or cleanup code.
@@ -73,7 +66,6 @@ Same thing for string formats: use them in some strings to know what they do.
 %G	Same as "g" except switches to "E" if the number gets too large.
 %c	Converts integer to character
 %r
-%s	String format. THe defualt type for strings
 %%	Multiplies the number by 100 and displays in fixed format with a % sign.
 
 ## Operators
@@ -86,11 +78,8 @@ Some of these may be unfamiliar to you, but look them up anyway. Find out what t
 /	Division
 //	Truncating division
 %	Returns the remainder from a division
-<	Less than comparison
 >	greater than comparison
 <=	less than or equal to comparison
->=	greater than or equal to comparison
-==	is equal to comparison
 !=	is not equal to comparison
 <>	obsolete version of !=
 ( )	binding or tuple display
@@ -100,7 +89,6 @@ Some of these may be unfamiliar to you, but look them up anyway. Find out what t
 ,
 :
 .
-=	Assignment operator, assigns a value
 ;
 +=
 -=	
