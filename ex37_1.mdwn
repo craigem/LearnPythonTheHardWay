@@ -34,68 +34,68 @@ try			specifies exception handlers and/or cleanup code.
 ## Data Types
 For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
 
-True		
-False
-None
-strings
-numbers
-floats
-lists
+True	Whether the result of a statement is True
+False	Whether the result of a statement is False
+None	An empty expression list
+strings	For data types, write out what makes up each one. For example, with striA literal value of content to manipulated
+numbers	
+floats	Floating point integers stored as binary numbers
+lists	a sequence data type i\with multiple elements
 
 ## String Escape Sequences
 For string escape sequences, use them in strings to make sure they do what you think they do.
 
-\\
-\'
-\"
-\a
-\b
-\f
-\n
-\r
-\t
-\v
+\\	Escapes the \ character
+\'	Escapes the ' character
+\"	Escapes the " character
+\a	ASCII Bell
+\b	ASCII Backspace
+\f	ASCII formfeed
+\n	ASCII linefeed (new line)
+\r	ASCII Carriage Return
+\t	ASCII Horizontal Tan
+\v	ASCII Vertical Tab
 
 ## String Formats
 Same thing for string formats: use them in some strings to know what they do.
 
-%d
-%i
-%o
+%d	Decimal integer
+%i	
+%o	Octal format
 %u
-%x
-%X
-%e
-%E
-%f
-%F
-%g
-%G
-%c
+%x	Hex format - lower case above 9
+%X	Hex format - upper cae above 9
+%e	Exponent notation - using e as the separator
+%E	Exponont notation - using E as the separator
+%f	Displays the number as a fixed point number.
+%F	Same as "f"
+%g	General format
+%G	Same as "g" except switches to "E" if the number gets too large.
+%c	Converts integer to character
 %r
-%s
-%%
+%s	String format. THe defualt type for strings
+%%	Multiplies the number by 100 and displays in fixed format with a % sign.
 
 ## Operators
 Some of these may be unfamiliar to you, but look them up anyway. Find out what they do, and if you still can't figure it out, save it for later.
 
-+
--
-*
-**
-/
-//
-%
-<
->
-<=
->=
-==
-!=
-<>
-( )
-[ ]
-{ }
++	Addition
+-	Subtraction
+*	Multiplication
+**	Exponentiation (power) operator
+/	Division
+//	Truncating division
+%	Returns the remainder from a division
+<	Less than comparison
+>	greater than comparison
+<=	less than or equal to comparison
+>=	greater than or equal to comparison
+==	is equal to comparison
+!=	is not equal to comparison
+<>	obsolete version of !=
+( )	binding or tuple display
+[ ]	list
+{ }	key display
 @
 ,
 :
