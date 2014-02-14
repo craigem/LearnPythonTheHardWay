@@ -39,6 +39,8 @@ def start():
 def red_room():
 	# AKA the intersting choice
 	print "So you've chosen to enbrace the sometimes painful truth of reality. Good choice."
+	print "Let's get serious then, shall we?"
+	print "\n"
 
 
 # %s	String format. The default type for strings
@@ -63,6 +65,7 @@ def blue_room():
 	else:
 		# Pander to that middle age insecurity
 		print "Wow, you look so much younger than %s and you live in %s! You truly are youthful and exotic." % (age, where)
+
 
 def dead(why):
 	print why, "Nice work nimble fingers!"
