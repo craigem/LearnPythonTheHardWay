@@ -19,7 +19,7 @@ except		specifies exception handlers in a try statement
 import		starts an import statement for a python module
 print		prints a string to stdout
 class		commences defining a class object
-exec		
+exec		dynamic execution of Python code
 in			Comparison operator testing for collection membership
 raise		if no expressions are present, re-raises the last exception in te current scope.
 continue	continues with the next cycle of the nearest enclosing loop of a for / while loop.

@@ -6,6 +6,8 @@
 # from
 # import
 from sys import exit
+from subprocess import call
+import datetime
 
 # def
 # print
@@ -33,7 +35,7 @@ def start():
 		blue_room()
 	else:
 	# Summon Keanu
-		dead("Your horrendous typing has summoned Keannu, who will bore you with annecdotes from Bill & Ted's excellent adventure for all eternity...")
+		dead("\n\a\a\aYour horrendous typing has summoned Keannu, who will bore you with annecdotes from Bill & Ted's excellent adventure for all eternity...")
 
 
 def red_room():
@@ -41,7 +43,19 @@ def red_room():
 	print "So you've chosen to enbrace the sometimes painful truth of reality. Good choice."
 	print "Let's get serious then, shall we?"
 	print "\n"
+	
+	next = raw_input("Would you like a glass of milk? ")
 
+	# Process their response
+	if next == "yes":
+	# yes will summon apt-get moo:
+		call(["apt-get", "moo"])
+	elif next == "no":
+	# no will take you to the red pill level 2
+		red_pill_l2()
+	else:
+	# Summon Keanu
+		dead("\n\a\a\aYour horrendous typing has summoned Keannu, who will bore you with annecdotes from Bill & Ted's excellent adventure for all eternity...")
 
 # %s	String format. The default type for strings
 # <		Less than comparison
@@ -66,6 +80,16 @@ def blue_room():
 		# Pander to that middle age insecurity
 		print "Wow, you look so much younger than %s and you live in %s! You truly are youthful and exotic." % (age, where)
 
+# Set the value of now
+now = datetime.datetime.now()
+
+def red_pill_l2():
+	age = raw_input("\nBefore we begin, how old are you? ")
+	# This sets up code to be called by exec later to calulate their year of birth
+	useexec = compile('year_of_birth = now.year - $age', '<string>', 'exec')
+	exec useexec % age
+	print "%s" % age
+	print "%s" % year_of_birth
 
 def dead(why):
 	print why, "Nice work nimble fingers!"

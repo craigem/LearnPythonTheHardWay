@@ -13,7 +13,7 @@ yield		used when defining a generator function
 break		terminates nearest enclosing for or while loop
 except		specifies exception handlers in a try statement
 class		commences defining a class object
-exec		
+exec		dynamic execution of Python code
 in			Comparison operator testing for collection membership
 raise		if no expressions are present, re-raises the last exception in te current scope.
 continue	continues with the next cycle of the nearest enclosing loop of a for / while loop.
@@ -41,7 +41,6 @@ For string escape sequences, use them in strings to make sure they do what you t
 \\	Escapes the \ character
 \'	Escapes the ' character
 \"	Escapes the " character
-\a	ASCII Bell
 \b	ASCII Backspace
 \f	ASCII formfeed
 \n	ASCII linefeed (new line)
