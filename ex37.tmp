@@ -1,6 +1,5 @@
 ## Keywords
 and			boolean operator evaluating two values
-del			delete specified target(s)
 not			boolean operator that yields true if the argument is fales and vice versa
 while		repeats execution as long as anexpresssion is true
 as			used with "with" to specify a target
@@ -13,14 +12,11 @@ yield		used when defining a generator function
 break		terminates nearest enclosing for or while loop
 except		specifies exception handlers in a try statement
 class		commences defining a class object
-exec		dynamic execution of Python code
 in			Comparison operator testing for collection membership
 raise		if no expressions are present, re-raises the last exception in te current scope.
 continue	continues with the next cycle of the nearest enclosing loop of a for / while loop.
 finally		specifies a cleanup handler in a try clause
-is			comparison operator
 return 		leaves the current function call with the expression list (or "none")
-for			denotes the start of a for loop
 lambda		creates an anonymous expression
 try			specifies exception handlers and/or cleanup code.
 
@@ -43,7 +39,6 @@ For string escape sequences, use them in strings to make sure they do what you t
 \"	Escapes the " character
 \b	ASCII Backspace
 \f	ASCII formfeed
-\n	ASCII linefeed (new line)
 \r	ASCII Carriage Return
 \t	ASCII Horizontal Tan
 \v	ASCII Vertical Tab
@@ -51,7 +46,6 @@ For string escape sequences, use them in strings to make sure they do what you t
 ## String Formats
 Same thing for string formats: use them in some strings to know what they do.
 
-%d	Decimal integer
 %i	
 %o	Octal format
 %u

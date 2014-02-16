@@ -84,12 +84,24 @@ def blue_room():
 now = datetime.datetime.now()
 
 def red_pill_l2():
+	# Bring in some numbers and add them to an array
 	age = raw_input("\nBefore we begin, how old are you? ")
 	# This sets up code to be called by exec later to calulate their year of birth
-	useexec = compile('year_of_birth = now.year - $age', '<string>', 'exec')
-	exec useexec % age
-	print "%s" % age
-	print "%s" % year_of_birth
+	useexec = compile('year_of_birth = now.year - %s' % age, '<string>', 'exec') 
+	exec useexec
+	print "Your age is: %s" % age
+	print "Your year of birth %d" % year_of_birth
+	print "Creating rpl2list..."
+	rpl2list = [age, year_of_birth]
+	print "rpl2list contains %s" % rpl2list
+	for i in rpl2list:
+		print "This is number: %s" % i
+	del rpl2list[1]
+	print "rpl2list contains %s" % rpl2list
+	if year_of_birth is "1984"
+		print "Big brother is watching you."
+
+	
 
 def dead(why):
 	print why, "Nice work nimble fingers!"
