@@ -16,8 +16,8 @@ from sys import exit
 # =	Assignment operator, assigns a value
 def start():
 	# Opening statement to player
-	print "You have entered my dark and stormy python script where I will" 
-	print "use all the operators."
+	print "You have entered my dark and stormy python script where I will use" 
+	print "all the operators."
 	print "Which pill do you want, red or blue? \n"
 
 	next = raw_input("Choose your pill colour: ")
@@ -37,7 +37,7 @@ def start():
 
 
 def red_room():
-	# AKA the intersting choice
+	# AKA the interesting choice
 	print "So you've chosen to enbrace the sometimes painful truth of reality. Good choice."
 	print "Let's get serious then, shall we?"
 	print "\n"
