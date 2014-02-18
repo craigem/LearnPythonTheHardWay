@@ -107,4 +107,5 @@ def dead(why):
 	print why, "Nice work nimble fingers!"
 	exit(0)
 
+# Start the program
 start()
