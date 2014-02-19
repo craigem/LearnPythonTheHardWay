@@ -37,12 +37,9 @@ For string escape sequences, use them in strings to make sure they do what you t
 
 \\	Escapes the \ character
 \'	Escapes the ' character
-\"	Escapes the " character
 \b	ASCII Backspace
 \f	ASCII formfeed
 \r	ASCII Carriage Return
-\t	ASCII Horizontal Tan
-\v	ASCII Vertical Tab
 
 ## String Formats
 Same thing for string formats: use them in some strings to know what they do.

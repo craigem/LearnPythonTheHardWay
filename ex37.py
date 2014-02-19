@@ -86,6 +86,9 @@ now = datetime.datetime.now()
 # [ ] list
 # * Multiplication
 # <= less than or equal to comparison
+# \" Escapes the " character
+#\t ASCII Horizontal Tab
+#\v ASCII Vertical Tab
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = raw_input("\nBefore we begin, how old are you? ")
@@ -106,7 +109,7 @@ def red_pill_l2():
 	months = (age * 12)
 	print "You've seen %s months." % months
 	if age <= "16":
-		dead("You're too young to be using this!")
+		dead("\t \vYou're \"too young\" to be using this!")
 
 	
 
