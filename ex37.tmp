@@ -19,6 +19,7 @@ finally		specifies a cleanup handler in a try clause
 return 		leaves the current function call with the expression list (or "none")
 lambda		creates an anonymous expression
 try			specifies exception handlers and/or cleanup code.
+is			comparison operator
 
 ## Data Types
 For data types, write out what makes up each one. For example, with strings write out how you create a string. For numbers write out a few numbers.
@@ -66,17 +67,13 @@ Some of these may be unfamiliar to you, but look them up anyway. Find out what t
 
 +	Addition
 -	Subtraction
-*	Multiplication
 **	Exponentiation (power) operator
 /	Division
 //	Truncating division
 %	Returns the remainder from a division
 >	greater than comparison
-<=	less than or equal to comparison
 !=	is not equal to comparison
-<>	obsolete version of !=
 ( )	binding or tuple display
-[ ]	list
 { }	key display
 @	
 ,

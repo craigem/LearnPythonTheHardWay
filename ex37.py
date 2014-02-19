@@ -83,6 +83,9 @@ def blue_room():
 # Set the value of now
 now = datetime.datetime.now()
 
+# [ ] list
+# * Multiplication
+# <= less than or equal to comparison
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = raw_input("\nBefore we begin, how old are you? ")
@@ -93,13 +96,16 @@ def red_pill_l2():
 	print "Your year of birth %d" % year_of_birth
 	print "Creating rpl2list..."
 	rpl2list = [age, year_of_birth]
-	print "rpl2list contains %s" % rpl2list
+	print "rpl2list contains: %s" % rpl2list
 	for i in rpl2list:
 		print "This is number: %s" % i
 	del rpl2list[1]
-	print "rpl2list contains %s" % rpl2list
-	if year_of_birth is "1984"
-		print "Big brother is watching you."
+	if year_of_birth == 1984:
+		print "\nBig brother is watching you."
+	months = (age * 12)
+	print "You've seen %s months." % months
+	if age <= 16:
+		dead("You're too young to be using this!")
 
 	
 
