@@ -106,8 +106,6 @@ def red_pill_l2():
 	if year_of_birth == 1984:
 		print "\nBig brother is watching you."
 	# This needs fixing
-	# Still needs fixing
-	# Still in need of fixing
 	months = (age * 12)
 	print "You've seen %s months." % months
 	if age <= "16":
