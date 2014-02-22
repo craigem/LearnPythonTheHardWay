@@ -35,9 +35,6 @@ lists	a sequence data type i\with multiple elements
 ## String Escape Sequences
 For string escape sequences, use them in strings to make sure they do what you think they do.
 
-\\	Escapes the \ character
-\'	Escapes the ' character
-\b	ASCII Backspace
 \f	ASCII formfeed
 \r	ASCII Carriage Return
 

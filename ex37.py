@@ -90,6 +90,9 @@ now = datetime.datetime.now()
 #\t ASCII Horizontal Tab
 #\v ASCII Vertical Tab
 #%f  Displays the number as a fixed point number.
+#\'  Escapes the ' character
+#\b  ASCII Backspace
+#\\  Escapes the \ character
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = int(raw_input("\nBefore we begin, how old are you? "))
@@ -102,17 +105,18 @@ def red_pill_l2():
 	rpl2list = [age, year_of_birth]
 	print "rpl2list contains: %s" % rpl2list
 	for i in rpl2list:
-		print "This is number: %s" % i
+		print "This is number: %d" % i
 	del rpl2list[1]
 	if year_of_birth == 1984:
 		print "\nBig brother is watching you."
 	# This needs fixing
 	months = (age * 12)
-	print "You've seen %s months." % months
-	if age <= "16":
+	print "You\'ve seen %s months." % months
+	if age <= 16:
 		dead("\t \vYou're \"too young\" to be using this!")
+	# Now I'm going to backspace a line just because
+	print "What\b is happening\b to\b this\b sentence\b? \\b gone wild."
 
-	
 
 def dead(why):
 	print why, "Nice work nimble fingers!"
