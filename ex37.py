@@ -89,13 +89,14 @@ now = datetime.datetime.now()
 # \" Escapes the " character
 #\t ASCII Horizontal Tab
 #\v ASCII Vertical Tab
+#%f  Displays the number as a fixed point number.
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
-	age = raw_input("\nBefore we begin, how old are you? ")
+	age = int(raw_input("\nBefore we begin, how old are you? "))
 	# This sets up code to be called by exec later to calulate their year of birth
 	useexec = compile('year_of_birth = now.year - %s' % age, '<string>', 'exec') 
 	exec useexec
-	print "Your age is: %s" % age
+	print "Your age is: %f" % age
 	print "Your year of birth %d" % year_of_birth
 	print "Creating rpl2list..."
 	rpl2list = [age, year_of_birth]

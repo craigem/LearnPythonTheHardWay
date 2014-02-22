@@ -51,7 +51,6 @@ Same thing for string formats: use them in some strings to know what they do.
 %X	Hex format - upper cae above 9
 %e	Exponent notation - using e as the separator
 %E	Exponont notation - using E as the separator
-%f	Displays the number as a fixed point number.
 %F	Same as "f"
 %g	General format
 %G	Same as "g" except switches to "E" if the number gets too large.
