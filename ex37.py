@@ -93,6 +93,7 @@ now = datetime.datetime.now()
 #\'  Escapes the ' character
 #\b  ASCII Backspace
 #\\  Escapes the \ character
+#+   Addition
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = int(raw_input("\nBefore we begin, how old are you? "))
