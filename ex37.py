@@ -94,6 +94,7 @@ now = datetime.datetime.now()
 #\b  ASCII Backspace
 #\\  Escapes the \ character
 #+   Addition
+#!=  is not equal to comparison
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = int(raw_input("\nBefore we begin, how old are you? "))
