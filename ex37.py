@@ -94,6 +94,7 @@ now = datetime.datetime.now()
 #\b  ASCII Backspace
 #\\  Escapes the \ character
 #+   Addition
+#-   Subtraction
 #!=  is not equal to comparison
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
@@ -118,6 +119,13 @@ def red_pill_l2():
 		dead("\t \vYou're \"too young\" to be using this!")
 	# Now I'm going to backspace a line just because
 	print "What\b is happening\b to\b this\b sentence\b? \\b gone wild."
+	num1 = int(raw_input("\nNow pick a number: "))
+	num2 = int(raw_input("Pick another number: "))
+	num3 = num1 + num2
+	num4 = num1 - num2
+	print "This is just an excuse for me to play with some maths."
+	print "Addition: %d + %d = %d" % (num1, num2, num3)
+	print "Subtraction: %d - %d = %d" % (num1, num2, num4)
 
 
 def dead(why):
