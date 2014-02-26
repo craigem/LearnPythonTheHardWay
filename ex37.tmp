@@ -58,9 +58,6 @@ Same thing for string formats: use them in some strings to know what they do.
 ## Operators
 Some of these may be unfamiliar to you, but look them up anyway. Find out what they do, and if you still can't figure it out, save it for later.
 
-**	Exponentiation (power) operator
-/	Division
-//	Truncating division
 %	Returns the remainder from a division
 >	greater than comparison
 !=	is not equal to comparison

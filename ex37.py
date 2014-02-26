@@ -96,6 +96,9 @@ now = datetime.datetime.now()
 #+   Addition
 #-   Subtraction
 #!=  is not equal to comparison
+#/   Division
+#//  Truncating division
+#**  Exponentiation (power) operator
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = int(raw_input("\nBefore we begin, how old are you? "))
@@ -123,9 +126,15 @@ def red_pill_l2():
 	num2 = int(raw_input("Pick another number: "))
 	num3 = num1 + num2
 	num4 = num1 - num2
+	num5 = num1 / num2
+	num6 = num1 // num2
+	num7 = num1 ** num2
 	print "This is just an excuse for me to play with some maths."
 	print "Addition: %d + %d = %d" % (num1, num2, num3)
 	print "Subtraction: %d - %d = %d" % (num1, num2, num4)
+	print "Division: %d / %d = %d" % (num1, num2, num5)
+	print "Truncating Division: %d // %d = %d" % (num1, num2, num6)
+	print "Exponention: %d ** %d = %d" % (num1, num2, num7)
 
 
 def dead(why):
