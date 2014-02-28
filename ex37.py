@@ -136,7 +136,8 @@ def red_pill_l2():
 	print "Division: %d / %d = %d" % (num1, num2, num5)
 	print "Truncating Division: %d // %d = %d" % (num1, num2, num6)
 	print "Exponention: %d ** %d = %d" % (num1, num2, num7)
-	print "Is %d > %d? %d" % (num1, num2, gt)
+	if num1 > num2:
+		print "By how much is %d > %d? %d" % (num1, num2, gt)
 
 def dead(why):
 	print why, "Nice work nimble fingers!"
