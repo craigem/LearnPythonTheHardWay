@@ -60,7 +60,6 @@ Some of these may be unfamiliar to you, but look them up anyway. Find out what t
 
 %	Returns the remainder from a division
 >	greater than comparison
-!=	is not equal to comparison
 ( )	binding or tuple display
 { }	key display
 @	

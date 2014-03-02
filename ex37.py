@@ -99,6 +99,7 @@ now = datetime.datetime.now()
 #/   Division
 #//  Truncating division
 #**  Exponentiation (power) operator
+#!=  is not equal to comparison
 def red_pill_l2():
 	# Bring in some numbers and add them to an array
 	age = int(raw_input("\nBefore we begin, how old are you? "))
@@ -130,15 +131,16 @@ def red_pill_l2():
 	num6 = num1 // num2
 	num7 = num1 ** num2
 	gt = num1 > num2
-	print "This is just an excuse for me to play with some maths."
-	print "Addition: %d + %d = %d" % (num1, num2, num3)
-	print "Subtraction: %d - %d = %d" % (num1, num2, num4)
-	print "Division: %d / %d = %d" % (num1, num2, num5)
-	print "Truncating Division: %d // %d = %d" % (num1, num2, num6)
-	print "Exponention: %d ** %d = %d" % (num1, num2, num7)
-	# Fix this
-	if num1 > num2:
-		print "By how much is %d > %d? %d" % (num1, num2, gt)
+	if num1 != num2:
+		print "This is just an excuse for me to play with some maths."
+		print "Addition: %d + %d = %d" % (num1, num2, num3)
+		print "Subtraction: %d - %d = %d" % (num1, num2, num4)
+		print "Division: %d / %d = %d" % (num1, num2, num5)
+		print "Truncating Division: %d // %d = %d" % (num1, num2, num6)
+		print "Exponention: %d ** %d = %d" % (num1, num2, num7)
+		# Fix this
+		if num1 > num2:
+			print "By how much is %d > %d? %d" % (num1, num2, gt)
 
 def dead(why):
 	print why, "Nice work nimble fingers!"
