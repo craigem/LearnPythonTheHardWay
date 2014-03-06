@@ -1,0 +1,10 @@
+class: Tell python to make a new kind of thing
+object: Two meanings: the most basic kind of thing, and any instance of something
+instance: What you get when you tell Python to create a class.
+def: How you define a function inside a class
+self: Inside the functions in a class, self is a variable for the instance / object being accessed.
+ineritance: The concept that one class can inherit traits from another class, much like how a car has wheels.
+composition: The concept that one class can be composd of other classes as parts, much like how a car has wheeks.
+attribute: A property classes have that are from composition nd are usually variables
+is-a: A phrase to say that something inherits from another, as in a "salmon" is-a "fish".
+has-a: A phrase to say that something is composed of other things or has a trait, as in "a salmon has-a mouth".

@@ -1,5 +1,5 @@
-# 1. Write some more songs using this and make sure you understand that you're 
-# passing a list of strings as the lyrics.
+# 2. Put the lyrics in a separate variable, then pass that variable to the 
+# class to use instead.
 
 class Song(object):
 
@@ -27,10 +27,10 @@ dc = Song(["D.C. you raised some backs up by the things you said, and",
 			"D.C. you gave them happiness and hobnob days and they will",
 			"Cherish them forever and when they get the blues and greys"])
 
-happy_bday.sing_me_a_song()
+#happy_bday.sing_me_a_song()
 
-bulls_on_parade.sing_me_a_song()
+#bulls_on_parade.sing_me_a_song()
 
-five_yards.sing_me_a_song()
+#five_yards.sing_me_a_song()
 
-dc.sing_me_a_song()
+#dc.sing_me_a_song()
