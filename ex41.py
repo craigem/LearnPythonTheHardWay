@@ -21,13 +21,14 @@ PHRASES = {
 }
 
 # do they want to drill phrases first
-PHTASE_FIRST = False
+PHRASE_FIRST = False
 if len(sys.argv) == 2 and sys.argv[1] == "english":
 	PHRASE_FIRST = True
 
 # load up the words from the website
 for word in urlopen(WORD_URL).readlines():
 	WORDS.append(word.strip())
+
 
 def convert(snippet, phrase):
 	class_names = [w.capitalize() for w in
@@ -59,6 +60,7 @@ def convert(snippet, phrase):
 
 	return results
 
+
 # keep going until they hit CTL-D
 try:
 	while True:
@@ -67,7 +69,9 @@ try:
 
 		for snippet in snippets:
 			phrase = PHRASES[snippet]
-			question, answer = answer, question
+			question, answer = (snippet, phrase)
+			if PHRASE_FIRST:
+				question, answer = answer, question
 
 		print question
 
