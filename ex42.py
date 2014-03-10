@@ -7,14 +7,14 @@ class Dog(Animal):
 
 	def __init__(self, name):
 		## ??
-		self,name = name
+		self.name = name
 
 ## ??
 class Cat(Animal):
 
 	def __init__(self, name):
-	## ??
-	self.name = name
+		## ??
+		self.name = name
 
 ## ??
 class Person(object):
@@ -40,7 +40,7 @@ class Fish(object):
 	pass
 
 ## ??
-class Salmon(Fish)
+class Salmon(Fish):
 	pass
 
 ## ??
@@ -56,3 +56,21 @@ satan = Cat("Satan")
 
 ## ??
 mary = Person("Mary")
+
+## ??
+mary.pet = satan
+
+## ??
+frank = Employee("Frank", 120000)
+
+## ??
+frank.pet = rover
+
+## ??
+flipper = Fish()
+
+## ??
+crouse = Salmon()
+
+## ??
+harry = Halibut()
