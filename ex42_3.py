@@ -25,12 +25,11 @@ class Person(object):
 	def __init__(self, name):
 		## ??
 		self.name = name
-		print "\Altogether People!"
-		print "=" * 19
 		print "%s says: Hello!" % self.name
 
 		## Person has-a pet of some kind
 		self.pet = None
+		print "My name is %s and this is my pet, %s." % (self.name, self.pet)
 
 ## Employee is-a Person
 class Employee(Person):
@@ -43,15 +42,27 @@ class Employee(Person):
 
 ## Fish is-a object
 class Fish(object):
-	pass
+
+	def __init__(self, name):
+		## ??
+		self.name = name
+		print "I'm %s the fish!" % self.name
 
 ## Salmon is-a fish
 class Salmon(Fish):
-	pass
+
+	def __init__(self, name):
+		## ??
+		self.name = name
+		print "I'm %s the salmon!" % self.name
 
 ## Halibut is-a fish
 class Halibut(Fish):
-	pass
+
+	def __init__(self, name):
+		## ??
+		self.name = name
+		print "I'm %s the halibut!" % self.name
 
 
 ## rover is-a Dog
@@ -73,10 +84,10 @@ frank = Employee("Frank", 120000)
 frank.pet = rover
 
 ## flipper is-a fish
-flipper = Fish()
+flipper = Fish("flipper")
 
 ## crouse is-a Salmon
-crouse = Salmon()
+crouse = Salmon("Crouse")
 
 ## harry is-a Halibut
-harry = Halibut()
+harry = Halibut("Harry")
