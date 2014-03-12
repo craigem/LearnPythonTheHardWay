@@ -46,7 +46,8 @@ class Scene(object):
 class Engine(object):
 
 	def __init__(self, scene_map):
-		pass
+		print "Engine __init__ has scene_map", scene_map
+		self.scene_map = scene_map
 
 #   - play
 	def play(self):
