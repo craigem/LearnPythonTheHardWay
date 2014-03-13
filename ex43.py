@@ -29,12 +29,18 @@
 # * Player
 # * Ship
 # * Maze
+
+# Import requirements
+from sys import exit
+from random import randint
+
 # * Scene
 #   - enter
 class Scene(object):
 
 	def enter(self):
-		pass
+		print "This scene is not yet configured. Subclass it and implement enter()."
+		exit(1)
 
 # * Engine
 class Engine(object):
