@@ -51,13 +51,29 @@ class Engine(object):
 
 #   - play
 	def play(self):
-		pass
+		current_scene = self.scene_map.opening_scene()
+		print "Play's first scene". current_scene
+
+		while True:
+			print "\n--------"
+			next_scene_name = current_scene.enter()
+			print "next scene", next_scene_name
+			current_scene = self.scene_map.next_scene(next_scene_name)
+			print "map returns new scene", current_scene
 
 #   * Death
 class Death(Scene):
 
+	quips = [
+		"You died. You kinda suck at this.",
+		"Your mum would be proud...is she were smarter.",
+		"Such a luser.",
+		"I have a small puppy that's better at this."
+	]
+
 	def enter(self):
-		pass
+		print Death.quips[randint(0, len(self.quips)-1)]
+		exit(1)
 
 #   * Central Corridor
 class CentralCorridor(Scene):
