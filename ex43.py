@@ -91,7 +91,7 @@ class CentralCorridor(Scene):
 		print "flowing around his hate filled body. He's blocking the door to the"
 		print "Armory and about to pull a weapon to blast you."
 
-		action = RAW_INPUT("> ")
+		action = raw_input("> ")
 
 		if action == "shoot!":
 			print "Quick on the draw you yank your blaster and fire it at the Gothon."
@@ -245,6 +245,7 @@ class Map(object):
 		print "start_scene in next_scene"
 		val = Map.scenes.get(scene_name)
 		print "next_scene returns", val
+		return val
 
 #   - opening_scene
 	def opening_scene(self):
