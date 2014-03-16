@@ -56,6 +56,7 @@ class Engine(object):
 
 		while True:
 			print "\n--------"
+			# Fix me
 			next_scene_name = current_scene.enter()
 			print "next scene", next_scene_name
 			current_scene = self.scene_map.next_scene(next_scene_name)
@@ -66,7 +67,7 @@ class Death(Scene):
 
 	quips = [
 		"You died. You kinda suck at this.",
-		"Your mum would be proud...is she were smarter.",
+		"Your mum would be proud...if she were smarter.",
 		"Such a luser.",
 		"I have a small puppy that's better at this."
 	]
