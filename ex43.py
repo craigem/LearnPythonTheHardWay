@@ -56,7 +56,6 @@ class Engine(object):
 
 		while True:
 			print "\n--------"
-			# Fix me
 			next_scene_name = current_scene.enter()
 			print "next scene", next_scene_name
 			current_scene = self.scene_map.next_scene(next_scene_name)
@@ -119,6 +118,7 @@ class CentralCorridor(Scene):
 			print "While he's laughing you run up and shoot him square in the head"
 			print "putting him down, then jump through the Weapon Armory door."
 			print 'laser_weapon_armory'
+			return 'laser_weapon_armory'
 
 		else:
 			print "DOES NOT COMPUTE!"
