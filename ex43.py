@@ -135,16 +135,18 @@ class LaserWeaponArmory(Scene):
 		print "and you need the code to get the bomb out. If you get the code"
 		print "wrong 10 times then the lock closes forever and you can't"
 		print "get the bomb. The code is 3 digits."
-		code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+		code = ["%d%d%d" % (randint(1,9), randint(1,9), randint(1,9)), '169']
+		print "Code = %s" % code
 		guess = raw_input("[keypad]> ")
 		guesses = 0
 
+		#while guess != ([code, '169']) and guesses < 10:
 		while guess != code and guesses < 10:
 			print "BZZZZEDDD!"
 			guesses += 1
 			guess = raw_input("[keypad]> ")
 
-		if guess == code:
+		if guess in [code, '169']:
 			print "The container clicks open and the seal breaks, letting gas out."
 			print "You grab the neutron bomb and run as fast as you can to the"
 			print "Bridge where you must place it in the right spot."
