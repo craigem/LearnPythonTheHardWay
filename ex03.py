@@ -1,3 +1,4 @@
+"""Exercise 3, Learning Python the Hard Way"""
 # Print the statement
 print "I will now count my chickens:"
 
