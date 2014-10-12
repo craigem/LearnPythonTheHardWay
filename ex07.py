@@ -1,3 +1,4 @@
+"""Exercise 7, Learning Python the Hard Way"""
 # -- coding: utf-8 --
 
 # Print the rhyme:
@@ -7,20 +8,20 @@ print "And everywhere that Mary went."
 print "." * 10 # what did that do?
 
 # Set the burger variables
-end1 = "C"
-end2 = "h"
-end3 = "e"
-end4 = "e"
-end5 = "s"
-end6 = "e"
-end7 = "B"
-end8 = "u"
-end9 = "r"
-end10 = "g"
-end11 = "e"
-end12 = "r"
+END1 = "C"
+END2 = "h"
+END3 = "e"
+END4 = "e"
+END5 = "s"
+END6 = "e"
+END7 = "B"
+END8 = "u"
+END9 = "r"
+END10 = "g"
+END11 = "e"
+END12 = "r"
 
 # Print the burger variables as one line and two words
 # watch that comma at the end. try removing it to see what happens
-print end1 + end2 + end3 + end4 + end5 + end6,
-print end7 + end8 + end9 + end10 + end11 + end12
+print END1 + END2 + END3 + END4 + END5 + END6,
+print END7 + END8 + END9 + END10 + END11 + END12
