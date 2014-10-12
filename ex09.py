@@ -1,12 +1,13 @@
+"""Exercise 9, Learning Python the Hard Way"""
 # -- coding: utf-8 --
 
 # Here's some new strange stuff, remember to type it exactly.
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+DAYS = "Mon Tue Wed Thu Fri Sat Sun"
+MONTHS = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
 
-print "Here are the days: ", days
-print "Here are the months: ", months
+print "Here are the days: ", DAYS
+print "Here are the months: ", MONTHS
 
 print """
 THere's something going on here.
