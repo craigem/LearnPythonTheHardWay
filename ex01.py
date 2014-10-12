@@ -1,3 +1,4 @@
+"""Exercise 1, Learning Python the Hard Way"""
 #print "Hello World!"
 #print "Hello Again"
 #print "I like typing this."
