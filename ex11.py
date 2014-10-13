@@ -1,10 +1,11 @@
+"""Exercise 11, Learning Python the Hard Way"""
 # -- coding: utf-8 --
 
 print "How old are you?",
-age = raw_input()
+AGE = raw_input()
 print "How tall are you?",
-height = raw_input()
+HEIGHT = raw_input()
 print "How much do you weigh?",
-weight = raw_input()
+WEIGHT = raw_input()
 
-print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
+print "So, you're %r old, %r tall and %r heavy." % (AGE, HEIGHT, WEIGHT)
