@@ -1,3 +1,4 @@
+"""Exercise 26, Learning Python the Hard Way"""
 def break_words(stuff):
     """This function will break up words for us."""
     words = stuff.split(' ')
@@ -36,9 +37,10 @@ def print_first_and_last_sorted(sentence):
 
 
 print "Let's practice everything."
-print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tabs.'
+print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t \
+    tabs.'
 
-poem = """
+POEM = """
 \tThe lovely world
 with logic so firmly planted
 cannot discern \n the needs of love
@@ -49,45 +51,47 @@ and requires an explantion
 
 
 print "--------------"
-print poem
+print POEM
 print "--------------"
 
-five = 10 - 2 + 3 - 6
-print "This should be five: %s" % five
+FIVE = 10 - 2 + 3 - 6
+print "This should be five: %s" % FIVE
 
 def secret_formula(started):
+    """Secret forumula for calculating the number of jars, bean and crates"""
     jelly_beans = started * 500
     jars = jelly_beans / 1000
     crates = jars / 100
     return jelly_beans, jars, crates
 
 
-start_point = 10000
-beans, jars, crates = secret_formula(start_point)
+START_POINT = 10000
+BEANS, JARS, CRATES = secret_formula(START_POINT)
 
-print "With a starting point of: %d" % start_point
-print "We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates)
+print "With a starting point of: %d" % START_POINT
+print "We'd have %d beans, %d jars, and %d crates." % (BEANS, JARS, CRATES)
 
-start_point = start_point / 10
+START_POINT = START_POINT / 10
 
 print "We can also do that this way:"
-print "We'd have %d beans, %d jars, and %d crates." % secret_formula(start_point)
+print "We'd have %d beans, %d jars, and %d crates." % secret_formula(
+    START_POINT)
 
 
-sentence = "All good things come to those who wait."
+SENTENCE = "All good things come to those who wait."
 
 import ex25
 
-words = ex25.break_words(sentence)
-sorted_words = ex25.sort_words(words)
+WORDS = ex25.break_words(SENTENCE)
+SORTED_WORDS = ex25.sort_words(WORDS)
 
-print_first_word(words)
-print_last_word(words)
-print_first_word(sorted_words)
-print_last_word(sorted_words)
-sorted_words = ex25.sort_sentence(sentence)
-print sorted_words
+print_first_word(WORDS)
+print_last_word(WORDS)
+print_first_word(SORTED_WORDS)
+print_last_word(SORTED_WORDS)
+SORTED_WORDS = ex25.sort_sentence(SENTENCE)
+print SORTED_WORDS
 
-print_first_and_last(sentence)
+print_first_and_last(SENTENCE)
 
-print_first_and_last_sorted(sentence)
+print_first_and_last_sorted(SENTENCE)
