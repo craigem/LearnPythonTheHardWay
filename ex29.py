@@ -1,29 +1,30 @@
-people = 20
-cats = 30
-dogs = 15
+"""Exercise 29, Learning Python the Hard Way"""
+PEOPLE = 20
+CATS = 30
+DOGS = 15
 
 
-if people < cats:
-	print "Too many cats! The world is doomed!"
+if PEOPLE < CATS:
+    print "Too many cats! The world is doomed!"
 
-if people > cats:
-	print "Not many cats! The world is asved!"
+if PEOPLE > CATS:
+    print "Not many cats! The world is asved!"
 
-if people < dogs:
-	print "The world is drooled on!"
+if PEOPLE < DOGS:
+    print "The world is drooled on!"
 
-if people > dogs:
-	print "The world is dry!"
-
-
-dogs += 5
-
-if people >= dogs:
-	print "People are greater than or equal to dogs."
-
-if people <= dogs:
-	print "People are less than or equal to dogs."
+if PEOPLE > DOGS:
+    print "The world is dry!"
 
 
-if people == dogs:
-	print "People are dogs."
+DOGS += 5
+
+if PEOPLE >= DOGS:
+    print "People are greater than or equal to dogs."
+
+if PEOPLE <= DOGS:
+    print "People are less than or equal to dogs."
+
+
+if PEOPLE == DOGS:
+    print "People are dogs."
