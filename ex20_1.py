@@ -1,41 +1,45 @@
+"""Exercise 20, Learning Python the Hard Way"""
 # Import arv from sys
 from sys import argv
 
-script, input_file = argv
+SCRIPT, INPUT_FILE = argv
 
-# Define the read function
-def print_all(f):
-	print f.read()
 
-# Define the seek function
-def rewind(f):
-	f.seek(0)
+def print_all(myfile):
+    """Define the read function"""
+    print myfile.read()
 
-# Define the line count function
-def print_a_line(line_count, f):
-	print line_count, f.readline()
+
+def rewind(myfile):
+    """Define the seek function"""
+    myfile.seek(0)
+
+
+def print_a_line(line_count, myfile):
+    """Define the line count function"""
+    print line_count, myfile.readline()
 
 # Open the file specified as an argument to the script
-current_file = open(input_file)
+CURRENT_FILE = open(INPUT_FILE)
 
 # Print the whol file
 print "First let's print the whole file:\n"
 
-print_all(current_file)
+print_all(CURRENT_FILE)
 
 # Use the rewind function to seek back to the start of the file
 print "Now let's rewind, kind of like a tape,"
 
-rewind(current_file)
+rewind(CURRENT_FILE)
 
 # Set the current line, print it and increment it
 print "Let's print three lines:"
 
-current_line = 1
-print_a_line(current_line, current_file)
+CURRENT_LINE = 1
+print_a_line(CURRENT_LINE, CURRENT_FILE)
 
-current_line = current_line + 1
-print_a_line(current_line, current_file)
+CURRENT_LINE = CURRENT_LINE + 1
+print_a_line(CURRENT_LINE, CURRENT_FILE)
 
-current_line = current_line + 1
-print_a_line(current_line, current_file)
+CURRENT_LINE = CURRENT_LINE + 1
+print_a_line(CURRENT_LINE, CURRENT_FILE)
