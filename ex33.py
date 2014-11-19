@@ -1,16 +1,17 @@
+"""Exercise 33, Learning Python the Hard Way"""
 i = 0
-numbers = []
+NUMBERS = []
 
 while i < 6:
-	print "At the top i is %d" % i
-	numbers.append(i)
+    print "At the top i is %d" % i
+    NUMBERS.append(i)
 
-	i = i + 1
-	print "Numbers now: ", numbers
-	print "At the bottom i is %d" % i
+    i = i + 1
+    print "Numbers now: ", NUMBERS
+    print "At the bottom i is %d" % i
 
 
 print "The numbers: "
 
-for num in numbers:
-	print num
+for num in NUMBERS:
+    print num

@@ -1,4 +1,4 @@
-"""Exercise 31, Learning Python the Hard Way"""
+"""Exercise 32, Learning Python the Hard Way"""
 THE_COUNT = [1, 2, 3, 4, 5]
 FRUITS = ['apples', 'oranges', 'pears', 'apricots']
 CHANGE = [1, 'pennies', 2, 'dimes', 3, 'quarters']

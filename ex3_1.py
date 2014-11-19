@@ -1,4 +1,4 @@
-"""Exercise 26, Learning Python the Hard Way"""
+"""Exercise 3, Learning Python the Hard Way"""
 # This exercise is to culculate something new
 
 # Start it simple
