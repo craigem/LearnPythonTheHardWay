@@ -1,4 +1,6 @@
 """Exercise 19, Learning Python the Hard Way"""
+
+
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
     """Print the crackers!"""
     print "You have %d cheeses!" % cheese_count
