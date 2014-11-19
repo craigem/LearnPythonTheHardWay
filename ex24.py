@@ -20,6 +20,7 @@ print "--------------"
 FIVE = 10 - 2 + 3 - 6
 print "This should be five: %s" % FIVE
 
+
 def secret_formula(started):
     """Secret forumula for calculating the number of jars, bean and crates"""
     jelly_beans = started * 500
