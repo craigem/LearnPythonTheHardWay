@@ -3,17 +3,20 @@ from sys import argv
 
 SCRIPT, INPUT_FILE = argv
 
-def print_all(f):
+
+def print_all(myfile):
     """Print the whole file"""
-    print f.read()
+    print myfile.read()
 
-def rewind(f):
+
+def rewind(myfile):
     """Rewind to the start of the file"""
-    f.seek(0)
+    myfile.seek(0)
 
-def print_a_line(line_count, f):
+
+def print_a_line(line_count, myfile):
     """Print one of the lines"""
-    print line_count, f.readline()
+    print line_count, myfile.readline()
 
 CURRENT_FILE = open(INPUT_FILE)
 
