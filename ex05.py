@@ -2,9 +2,9 @@
 # -- coding: utf-8 --
 
 NAME = 'Zed A. Shaw'
-AGE = 35 # not a lie
-HEIGHT = 74 # inches
-WEIGHT = 180 # lbs
+AGE = 35  # not a lie
+HEIGHT = 74  # inches
+WEIGHT = 180  # lbs
 EYES = 'Blue'
 TEETH = 'White'
 HAIR = 'Brown'
