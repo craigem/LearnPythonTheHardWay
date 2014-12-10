@@ -1,26 +1,28 @@
-ten_things = "Apples Oranges Crows Telephone Light Sugar"
+"""Exercise 38.1, Learning Python the Hard Way"""
+TEN_THINGS = "Apples Oranges Crows Telephone Light Sugar"
 
 print "Wait there's not 10 things in that list, let's fix that."
 
-stuff = ten_things.split(' ')
-more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
+STUFF = TEN_THINGS.split(' ')
+MORE_STUFF = ["Day", "Night", "Song", "Frisbee", "Corn",
+              "Banana", "Girl", "Boy"]
 
-while len(stuff) != 10:
-	next_one = more_stuff.pop()
-	print "Adding: ", next_one
-	stuff.append(next_one)
-	print "There's %d items now." % len(stuff)
+while len(STUFF) != 10:
+    NEXT_ONE = MORE_STUFF.pop()
+    print "Adding: ", NEXT_ONE
+    STUFF.append(NEXT_ONE)
+    print "There's %d items now." % len(STUFF)
 
-print "There we go: ", stuff
+print "There we go: ", STUFF
 
 print "Let's do some things with stuff."
 
-print stuff[1]
-print stuff[-1] #whoa! fanncy
-print stuff.pop()
-# This is join(' ', stuff)
-# Join the contents of stuff with a space between them
-print ' '.join(stuff) # what? cool!
-# This is join('#', stuff[3:5])
-# Join items 3 and 5 in stuff with a # between them
-print '#'.join(stuff[3:5]) #super stellar!
+print STUFF[1]
+print STUFF[-1]  # whoa! Fancy
+print STUFF.pop()
+# This is join(' ', STUFF)
+# Join the contents of STUFF with a space between them
+print ' '.join(STUFF)  # what? cool!
+# This is join('#', STUFF[3:5])
+# Join items 3 and 5 in STUFF with a # between them
+print '#'.join(STUFF[3:5])  # super stellar!
