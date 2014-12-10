@@ -1,22 +1,24 @@
-ten_things = "Apples Oranges Crows Telephone Light Sugar"
+"""Exercise 38, Learning Python the Hard Way"""
+TEN_THINGS = "Apples Oranges Crows Telephone Light Sugar"
 
 print "Wait there's not 10 things in that list, let's fix that."
 
-stuff = ten_things.split(' ')
-more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
+STUFF = TEN_THINGS.split(' ')
+MORE_STUFF = ["Day", "Night", "Song", "Frisbee", "Corn",
+              "Banana", "Girl", "Boy"]
 
-while len(stuff) != 10:
-	next_one = more_stuff.pop()
-	print "Adding: ", next_one
-	stuff.append(next_one)
-	print "There's %d items now." % len(stuff)
+while len(STUFF) != 10:
+    NEXT_ONE = MORE_STUFF.pop()
+    print "Adding: ", NEXT_ONE
+    STUFF.append(NEXT_ONE)
+    print "There's %d items now." % len(STUFF)
 
-print "There we go: ", stuff
+print "There we go: ", STUFF
 
 print "Let's do some things with stuff."
 
-print stuff[1]
-print stuff[-1] #whoa! fanncy
-print stuff.pop()
-print ' '.join(stuff) # what? cool!
-print '#'.join(stuff[3:5]) #super stellar!
+print STUFF[1]
+print STUFF[-1]  # whoa! Fancy
+print STUFF.pop()
+print ' '.join(STUFF)  # what? cool!
+print '#'.join(STUFF[3:5])  # super stellar!
