@@ -1,76 +1,82 @@
-## Animal is-a object (yes, sort of confusing) look at the extra credit
+"""Exercise 42, Learning Python the Hard Way"""
+
+
 class Animal(object):
-	pass
+    """Animal is-a object (yes, sort of confusing) look @ the extra credit."""
+    pass
 
-## ??
+
 class Dog(Animal):
+    """The Dog class which is-a Animal."""
+    def __init__(self, name):
+        # ??
+        self.name = name
 
-	def __init__(self, name):
-		## ??
-		self.name = name
 
-## ??
 class Cat(Animal):
+    """The Cat class which is-a Animal."""
+    def __init__(self, name):
+        # ??
+        self.name = name
 
-	def __init__(self, name):
-		## ??
-		self.name = name
 
-## ??
 class Person(object):
+    """The Person class which is-a object."""
+    def __init__(self, name):
+        # ??
+        self.name = name
 
-	def __init__(self, name):
-		## ??
-		self.name = name
+        # Person has-a pet of some kind
+        self.pet = None
 
-		## Person has-a pet of some kind
-		self.pet = None
 
-## ??
 class Employee(Person):
+    """The employees class which is-a Person."""
+    def __init__(self, name, salary):
+        # ?? hmm what is this strange magic?
+        super(Employee, self).__init__(name)
+        # ??
+        self.salary = salary
 
-	def __init__(self, name, salary):
-		## ?? hmm what is this strange magic?
-		super(Employee, self).__init__(name)
-		## ??
-		self.salary = salary
 
-## ??
 class Fish(object):
-	pass
+    """The Fish class which is-a object."""
+    pass
 
-## ??
+
 class Salmon(Fish):
-	pass
+    """The Salmon class which is-a Fish."""
+    pass
 
-## ??
+
 class Halibut(Fish):
-	pass
+    """The Halibut class which is-a Fish."""
+    pass
 
 
-## rover is-a Dog
-rover = Dog("Rover")
+# rover is-a Dog
+ROVER = Dog("Rover")
 
-## ??
-satan = Cat("Satan")	
+# ??
+SATAN = Cat("Satan")
 
-## ??
-mary = Person("Mary")
+# ??
+MARY = Person("Mary")
 
-## ??
-mary.pet = satan
+# ??
+MARY.pet = SATAN
 
-## ??
-frank = Employee("Frank", 120000)
+# ??
+FRANK = Employee("Frank", 120000)
 
-## ??
-frank.pet = rover
+# ??
+FRANK.pet = ROVER
 
-## ??
-flipper = Fish()
+# ??
+FLIPPER = Fish()
 
-## ??
-crouse = Salmon()
+# ??
+CROUSE = Salmon()
 
-## ??
-harry = Halibut()
+# ??
+HARRY = Halibut()
