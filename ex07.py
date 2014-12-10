@@ -5,7 +5,7 @@
 print "Mary had a little lamb."
 print "It's fleese was white as %s." % 'snow'
 print "And everywhere that Mary went."
-print "." * 10 # what did that do?
+print "." * 10  # what did that do?
 
 # Set the burger variables
 END1 = "C"
