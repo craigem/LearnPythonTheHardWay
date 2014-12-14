@@ -1,13 +1,19 @@
-class Parent(object):
+"""Exercise 43, Learning Python the Hard Way"""
 
+
+class Parent(object):
+    """Define the Parent object."""
     def implicit(self):
+        """It's implicit!"""
         print "PARENT implicit()"
 
+
 class Child(Parent):
+    """Child class is-a child of the Parent class"""
     pass
 
-dad = Parent()
-son = Child()
+DAD = Parent()
+SON = Child()
 
-dad.implicit()
-son.implicit()
+DAD.implicit()
+SON.implicit()
