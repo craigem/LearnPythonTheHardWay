@@ -1,15 +1,21 @@
-class Parent(object):
+"""Exercise 43, Learning Python the Hard Way"""
 
-	def override(self):
-		print "PARENT override()"
+
+class Parent(object):
+    """The Parent class is-a object."""
+    def override(self):
+        """Define the override."""
+        print "PARENT override()"
+
 
 class Child(Parent):
+    """The Child class is-a child of the Parent class."""
+    def override(self):
+        """Define the override."""
+        print "CHILD override()"
 
-	def override(self):
-		print "CHILD override()"
+DAD = Parent()
+SON = Child()
 
-dad = Parent()
-son = Child()
-
-dad.override()
-son.override()
+DAD.override()
+SON.override()
