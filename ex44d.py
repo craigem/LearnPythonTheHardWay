@@ -1,42 +1,44 @@
-# opens the class Parent
+"""Exercise 43, Learning Python the Hard Way"""
+
+
 class Parent(object):
+    """Opens the class Parent."""
+    def override(self):
+        """define the override."""
+        print "PARENT overrride()"
 
-	# define the override
-	def override(self):
-		print "PARENT overrride()"
+    def implicit(self):
+        """define implicit inheritance"""
+        print "PARENT implicit"
 
-	# define implicit inheritance
-	def implicit(self):
-		print "PARENT implicit"
+    def altered(self):
+        """define the altered inheretance"""
+        print "PARENT altered()"
 
-	# define the altered inheretance
-	def altered(self):
-		print "PARENT altered()"
 
-# opens the class Child with inhereitance from Parent
 class Child(Parent):
+    """opens the class Child with inhereitance from Parent"""
+    # define the override
+    def override(self):
+        print "CHILD override()"
 
-	# define the override
-	def override(self):
-		print "CHILD override()"
+    # define the altered inheretance
+    def altered(self):
+        print "CHILD, BEFORE PARENT altered()"
+        # Use super to call the altered Parent version
+        super(Child, self).altered()
+        print "CHILD, AFTER PARENT altered()"
 
-	# define the altered inheretance
-	def altered(self):
-		print "CHILD, BEFORE PARENT altered()"
-		# Use super to call the altered Parent version
-		super(Child, self).altered()
-		print "CHILD, AFTER PARENT altered()"
-
-# set dad and son
-dad = Parent()
-son = Child()
+# set DAD and SON
+DAD = Parent()
+SON = Child()
 
 # Run each version
-dad.implicit()
-son.implicit()
+DAD.implicit()
+SON.implicit()
 
-dad.override()
-son.override()
+DAD.override()
+SON.override()
 
-dad.altered()
-son.altered()
+DAD.altered()
+SON.altered()
