@@ -1,12 +1,19 @@
+"""Exercise 47 - Learning Python the Hard Way"""
+
+
 class Room(object):
+    """The room will be testing..."""
 
-	def __init__(self, name, description):
-		self.name = name
-		self.description = description
-		self.paths = {}
+    def __init__(self, name, description):
+        """Initialise the room"""
+        self.name = name
+        self.description = description
+        self.paths = {}
 
-	def go(self, direction):
-		return self.paths.get(direction, None)
+    def gamego(self, direction):
+        """Start the game"""
+        return self.paths.get(direction, None)
 
-	def add_paths(self, paths):
-		self.paths.update(paths)
+    def add_paths(self, paths):
+        """Add the relevant paths"""
+        self.paths.update(paths)
