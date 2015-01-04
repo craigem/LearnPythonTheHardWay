@@ -11,9 +11,9 @@ config = {
 	'author_email': 'craige@mcwhirter.com.au',
 	'version': '0.1',
 	'install_requires': ['nose'],
-	'packages': ['NAME'],
+	'packages': ['ex48'],
 	'scripts': [],
-	'name': 'exercise48'
+	'name': 'ex48'
 }
 
 setup(**config)
